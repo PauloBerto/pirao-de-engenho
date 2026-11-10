@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato e Reservas | Pirão de Engenho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header id="topo">
+        <div class="container topo-conteudo">
+            <a href="index.html" class="marca">
+                <img src="img/logo.svg" alt="Logo do Pirão de Engenho" width="44" height="44">
+                <span>Pirão de Engenho</span>
+            </a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html" class="ativo">Contato e Reservas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cabecalho-pagina">
+            <div class="container">
+                <h1>Contato e reservas</h1>
+                <p>Mande sua mensagem ou peça uma reserva. Respondemos no mesmo dia, em horário de funcionamento.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container contato-colunas">
+
+                <form id="form-contato" action="#" onsubmit="return validarFormulario()">
+                    <fieldset>
+                        <legend>Seus dados</legend>
+
+                        <label for="nome">Nome </label>
+                        <input type="text" id="nome" name="nome">
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(48) 99999-9999">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sobre o contato</legend>
+
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto">
+                            <option value="">Selecione...</option>
+                            <option value="reserva">Reserva de mesa</option>
+                            <option value="evento">Aniversário ou evento</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="elogio">Elogio ou reclamação</option>
+                        </select>
+
+                        <label for="pessoas">Quantidade de pessoas <span class="dica">(só para reservas)</span></label>
+                        <select id="pessoas" name="pessoas">
+                            <option value="">-</option>
+                            <option value="6">6 a 10 pessoas</option>
+                            <option value="11">11 a 20 pessoas</option>
+                            <option value="21">Mais de 20 pessoas</option>
+                        </select>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                    </fieldset>
+
+                    <button type="submit" class="botao">Enviar mensagem</button>
+
+                    <!-- aparece depois do envio -->
+                    <p id="retorno-form"></p>
+                </form>
+
+                <aside class="info-contato">
+                    <h2>Como funciona a reserva</h2>
+                    <ol>
+                        <li>Preencha o formulário escolhendo <strong>Reserva de mesa</strong>.</li>
+                        <li>Informe a data e o horário que deseja na mensagem.</li>
+                        <li>Nossa equipe confirma por telefone ou WhatsApp.</li>
+                        <li>Chegue até 15 minutos depois do horário marcado.</li>
+                    </ol>
+
+                    <table class="tabela">
+                        <caption>Horário de funcionamento</caption>
+                        <thead>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Horário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda</td>
+                                <td>Fechado</td>
+                            </tr>
+                            <tr>
+                                <td>Terça a sexta</td>
+                                <td>11h às 22h</td>
+                            </tr>
+                            <tr>
+                                <td>Sábado</td>
+                                <td>11h às 23h</td>
+                            </tr>
+                            <tr>
+                                <td>Domingo</td>
+                                <td>11h às 16h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Endereço</h3>
+                    <p>
+                        Rua da Prainha, 214 - Santo Antônio de Lisboa<br>
+                        Telefone: (48) 3333-4521
+                    </p>
+                    <p><a href="https://www.google.com/maps" target="_blank" class="link-simples">Abrir no Google Maps</a></p>
+                </aside>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <div class="container rodape-colunas">
+            <div>
+                <h4>Pirão de Engenho</h4>
+                <p>Rua da Prainha, 214 - Santo Antônio de Lisboa<br>(48) 3333-4521</p>
+            </div>
+            <div>
+                <h4>Horários</h4>
+                <p>Terça a sexta: 11h às 22h<br>Sábado: 11h às 23h<br>Domingo: 11h às 16h</p>
+            </div>
+            <div>
+                <h4>Siga a gente</h4>
+                <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+            </div>
+        </div>
+        <p class="creditos">Trabalho Final - Desenvolvimento Web - Raissa Freitas - 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

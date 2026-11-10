@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Pirão de Engenho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header id="topo">
+        <div class="container topo-conteudo">
+            <a href="index.html" class="marca">
+                <img src="img/logo.svg" alt="Logo do Pirão de Engenho" width="44" height="44">
+                <span>Pirão de Engenho</span>
+            </a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cardapio.html" class="ativo">Cardápio</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato e Reservas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cabecalho-pagina">
+            <div class="container cardapio">
+                <h1>Cardápio</h1>
+                <p>Os pratos principais servem bem <strong>uma pessoa</strong>. Os marcados com <em>(serve 2)</em> dão para dividir.</p>
+
+                <!-- atalhos para as categorias -->
+                <ul id="categorias">
+                    <li><a href="#entradas">Entradas</a></li>
+                    <li><a href="#principais">Pratos principais</a></li>
+                    <li><a href="#sobremesas">Sobremesas</a></li>
+                    <li><a href="#bebidas" >Bebidas</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="container cardapio">
+
+            <section id="entradas" class="categoria">
+                <h2>Entradas</h2>
+                <ul class="lista-pratos">
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Ostras in natura <em>(dúzia)</em></span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 48,00</span>
+                        </div>
+                        <p class="descricao">Do cultivo aqui da baía, abertas na hora e servidas com limão.</p>
+                    </li>
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Ostras gratinadas <em>(dúzia)</em></span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 62,00</span>
+                        </div>
+                        <p class="descricao">Com molho branco e queijo, gratinadas na brasa.</p>
+                    </li>
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Berbigão ao bafo</span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 42,00</span>
+                        </div>
+                        <p class="descricao">Cozido no vapor com cebola e cheiro-verde. Vem com pão torrado.</p>
+                    </li>
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Pastel de berbigão</span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 34,00</span>
+                        </div>
+                        <p class="descricao">Porção com oito pastéis pequenos de massa fininha.</p>
+                    </li>
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Casquinha de siri</span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 26,00</span>
+                        </div>
+                        <p class="descricao">Carne de siri refogada, servida na casca com farofa por cima.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="principais" class="categoria">
+                <h2>Pratos principais</h2>
+
+                <!-- prato em destaque: muda conforme a época de cada peixe -->
+                <div id="sugestao-chef">
+                    <img src="img/anchova.jpg" alt="Peixe inteiro assado com batatas e legumes">
+                    <div>
+                        <p class="selo">Sugestão da época</p>
+                        <h3>Anchova assada na brasa</h3>
+                        <p>É tempo de anchova na ilha. O peixe vai inteiro para a brasa e chega com batatas, arroz e pirão.</p>
+                        <p class="preco-destaque"><del>R$ 118,00</del> <strong>R$ 96,00</strong></p>
+                    </div>
+                </div>
+
+                <ul class="lista-pratos">
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Sequência de camarão <em>(serve 2)</em></span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 178,00</span>
+                        </div>
+                        <p class="descricao">Camarão ao bafo, à milanesa e alho e óleo, casquinha de siri, filé de peixe, arroz, pirão e salada.</p>
+                    </li>
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Camarão ensopado</span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 74,00</span>
+                        </div>
+                        <p class="descricao">No molho de tomate com cheiro-verde, servido com arroz, pirão e farofa.</p>
+                    </li>
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Tainha escalada</span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 64,00</span>
+                        </div>
+                        <p class="descricao">Só na temporada da tainha, de maio a julho. Frita, com arroz, feijão e pirão.</p>
+                    </li>
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Filé de peixe ao molho de camarão</span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 69,00</span>
+                        </div>
+                        <p class="descricao">Peixe do dia grelhado, com molho de camarão, arroz e batata cozida.</p>
+                    </li>
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Berbigão ensopado</span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 52,00</span>
+                        </div>
+                        <p class="descricao">Receita da Dona Lurdes, com arroz branco e pirão do próprio caldo.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="sobremesas" class="categoria">
+                <h2>Sobremesas</h2>
+                <ul class="lista-pratos">
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Sagu de vinho com creme</span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 18,00</span>
+                        </div>
+                        <p class="descricao">Bolinhas de sagu cozidas no vinho tinto, com creme de baunilha por cima.</p>
+                    </li>
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Arroz-doce</span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 16,00</span>
+                        </div>
+                        <p class="descricao">Com casca de limão e canela, como nas festas do Divino.</p>
+                    </li>
+                    <li>
+                        <div class="linha-prato">
+                            <span class="nome-prato">Bijajica</span>
+                            <span class="pontilhado"></span>
+                            <span class="preco">R$ 14,00</span>
+                        </div>
+                        <p class="descricao">Biscoito açoriano de massa de mandioca, amendoim e açúcar mascavo. Três unidades.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="bebidas" class="categoria">
+                <h2>Bebidas</h2>
+                <table class="tabela">
+                    <caption>Sucos e bebidas da casa</caption>
+                    <thead>
+                        <tr>
+                            <th>Bebida</th>
+                            <th>Copo (300 ml)</th>
+                            <th>Jarra (1 litro)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Suco de maracujá</td>
+                            <td>R$ 10,00</td>
+                            <td>R$ 26,00</td>
+                        </tr>
+                        <tr>
+                            <td>Suco de butiá</td>
+                            <td>R$ 11,00</td>
+                            <td>R$ 28,00</td>
+                        </tr>
+                        <tr>
+                            <td>Abacaxi com hortelã</td>
+                            <td>R$ 10,00</td>
+                            <td>R$ 26,00</td>
+                        </tr>
+                        <tr>
+                            <td>Limonada</td>
+                            <td>R$ 9,00</td>
+                            <td>R$ 24,00</td>
+                        </tr>
+                        <tr>
+                            <td>Refrigerante (lata)</td>
+                            <td>R$ 7,00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Água mineral</td>
+                            <td>R$ 5,00</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="observacao">Os sucos são feitos com a fruta, sem açúcar. Se quiser adoçado, é só pedir.</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer id="rodape">
+        <div class="container rodape-colunas">
+            <div>
+                <h4>Pirão de Engenho</h4>
+                <p>Rua da Prainha, 214 - Santo Antônio de Lisboa<br>(48) 3333-4521</p>
+            </div>
+            <div>
+                <h4>Horários</h4>
+                <p>Terça a sexta: 11h às 22h<br>Sábado: 11h às 23h<br>Domingo: 11h às 16h</p>
+            </div>
+            <div>
+                <h4>Siga a gente</h4>
+                <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+            </div>
+        </div>
+        <p class="creditos">Trabalho Final - Desenvolvimento Web - Raissa Freitas - 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

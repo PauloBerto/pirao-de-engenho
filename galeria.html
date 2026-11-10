@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | Pirão de Engenho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header id="topo">
+        <div class="container topo-conteudo">
+            <a href="index.html" class="marca">
+                <img src="img/logo.svg" alt="Logo do Pirão de Engenho" width="44" height="44">
+                <span>Pirão de Engenho</span>
+            </a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="galeria.html" class="ativo">Galeria</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato e Reservas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cabecalho-pagina">
+            <div class="container">
+                <h1>Galeria de fotos</h1>
+                <p>Um pouco do deck, do salão e dos pratos. Clique numa miniatura para ver a foto maior.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <figure id="foto-principal">
+                    <img id="imagem-grande" src="img/deck.jpg" alt="Deck do restaurante sobre o mar">
+                    <figcaption id="legenda-foto">O deck no fim da tarde, com a baía logo ali.</figcaption>
+                </figure>
+
+                <!-- cada miniatura chama trocarFoto() passando o arquivo e a legenda -->
+                <ul id="miniaturas">
+                    <li><img src="img/deck.jpg" alt="Deck do restaurante sobre o mar" class="selecionada" onclick="trocarFoto(this, 'O deck no fim da tarde, com a baía logo ali.')"></li>
+                    <li><img src="img/salao.jpg" alt="Salão com teto de madeira" onclick="trocarFoto(this, 'O salão, com o madeiramento do antigo rancho de canoa.')"></li>
+                    <li><img src="img/hero.jpg" alt="Ostras in natura com limão" onclick="trocarFoto(this, 'Ostras in natura, do cultivo direto para a mesa.')"></li>
+                    <li><img src="img/ostras-gratinadas.jpg" alt="Ostras gratinadas na grelha" onclick="trocarFoto(this, 'Ostras gratinadas indo para a brasa.')"></li>
+                    <li><img src="img/camarao.jpg" alt="Camarão à milanesa" onclick="trocarFoto(this, 'Camarão à milanesa, uma das etapas da sequência.')"></li>
+                    <li><img src="img/berbigao.jpg" alt="Berbigão ao bafo" onclick="trocarFoto(this, 'Berbigão ao bafo com pão torrado.')"></li>
+                    <li><img src="img/anchova.jpg" alt="Anchova assada" onclick="trocarFoto(this, 'Anchova assada na brasa, a sugestão desta época.')"></li>
+                    <li><img src="img/ensopado.jpg" alt="Camarão ensopado com pirão" onclick="trocarFoto(this, 'Camarão ensopado com pirão, arroz e farofa.')"></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <div class="container rodape-colunas">
+            <div>
+                <h4>Pirão de Engenho</h4>
+                <p>Rua da Prainha, 214 - Santo Antônio de Lisboa<br>(48) 3333-4521</p>
+            </div>
+            <div>
+                <h4>Horários</h4>
+                <p>Terça a sexta: 11h às 22h<br>Sábado: 11h às 23h<br>Domingo: 11h às 16h</p>
+            </div>
+            <div>
+                <h4>Siga a gente</h4>
+                <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+            </div>
+        </div>
+        <p class="creditos">Trabalho Final - Desenvolvimento Web - Raissa Freitas - 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
