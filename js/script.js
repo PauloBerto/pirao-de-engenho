@@ -1,12 +1,12 @@
 // Pirão de Engenho - script.js
-// esse arquivo é usado em todas as paginas, entao cada função
+// esse arquivo é usado em todas as páginas, então cada função
 // confere se o elemento existe antes de mexer nele
 
 
-// 1 - horario de funcionamento (pagina inicial)
+// 1 - horário de funcionamento (página inicial)
 
 // posição 0 = domingo, 1 = segunda ... 6 = sábado
-// segunda fica 0 porque o restaurante nao abre
+// segunda fica 0 porque o restaurante não abre
 var horaAbre = [11, 0, 11, 11, 11, 11, 11];
 var horaFecha = [16, 0, 22, 22, 22, 22, 23];
 var nomesDias = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
@@ -46,7 +46,7 @@ function trocarFoto(miniatura, legenda){
     document.getElementById("imagem-grande").alt = miniatura.alt;
     document.getElementById("legenda-foto").innerHTML = legenda;
 
-    // tira a marcação de todas e coloca so na que foi clicada
+    // tira a marcação de todas e coloca só na que foi clicada
     var todas = document.getElementById("miniaturas").getElementsByTagName("img");
     for(var i = 0; i < todas.length; i++){
         todas[i].className = "";
@@ -55,7 +55,7 @@ function trocarFoto(miniatura, legenda){
 }
 
 
-// 3 - validar o formulario de contato
+// 3 - validar o formulário de contato
 
 function validarFormulario(){
     var nome = document.getElementById("nome").value;
@@ -75,7 +75,7 @@ function validarFormulario(){
         return false;
     }
 
-    // conta so os numeros do telefone (com DDD tem que ter pelo menos 10)
+    // conta só os números do telefone (com DDD tem que ter pelo menos 10)
     var qtdNumeros = 0;
     for(var i = 0; i < telefone.length; i++){
         if(telefone[i] >= "0" && telefone[i] <= "9"){
@@ -104,6 +104,6 @@ function validarFormulario(){
         document.getElementById("form-contato").reset();
     }
 
-    // o site nao tem servidor, entao a pagina nao é enviada de verdade
+    // o site não tem servidor, então a página não é enviada de verdade
     return false;
 }

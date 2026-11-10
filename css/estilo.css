@@ -1,17 +1,6 @@
-/*  Pirão de Engenho
-    Estilos de todas as páginas
-
-    Classes e ids: usei id no que aparece uma vez só na página
-    (topo, rodapé, sugestão do chef, foto grande da galeria) e no que
-    o JS precisa encontrar. O que se repete, como .botao e .lista-pratos,
-    ficou como classe.
-
-    Cores:
-    #f4ede1 areia
-    #1b2a33 texto
-    #1f5c7a azul-mar
-    #d69a2d mostarda
-    #d5cfc1 linhas
+/* Pirão de Engenho - estilos de todas as páginas
+   id: o que aparece uma vez só (topo, rodapé, foto da galeria) e o que o JS usa
+   classe: o que repete, tipo .botao e .lista-pratos
 */
 
 
