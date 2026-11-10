@@ -20,7 +20,7 @@ function mostrarFuncionamento(){
 
     var agora = new Date();
     var dia = agora.getDay();
-    var hora = agora.getHours();  
+    var hora = agora.getHours();
 
     if(horaAbre[dia] == 0){
         status.innerHTML = "Hoje é " + nomesDias[dia] + " e estamos <strong>fechados</strong>. Voltamos amanhã às 11h.";
@@ -65,7 +65,7 @@ function validarFormulario(){
     var pessoas = document.getElementById("pessoas").value;
     var mensagem = document.getElementById("mensagem").value;
 
-    if(nome == "" || email == ""|| telefone == "" || mensagem == ""){
+    if(nome == "" || email == "" || telefone == "" || mensagem == ""){
         alert("Preencha nome, e-mail, telefone e mensagem.");
         return false;
     }
@@ -79,7 +79,7 @@ function validarFormulario(){
     var qtdNumeros = 0;
     for(var i = 0; i < telefone.length; i++){
         if(telefone[i] >= "0" && telefone[i] <= "9"){
-            qtdNumeros ++;
+            qtdNumeros++;
         }
     }
     if(qtdNumeros < 10){

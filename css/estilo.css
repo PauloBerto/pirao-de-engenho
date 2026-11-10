@@ -149,7 +149,7 @@ figcaption {
 
 /* SEÇÕES */
 
-.secao { padding:64px 0; }
+.secao { padding: 64px 0; }
 
 .secao-clara {
     background-color: #e7e3d7;
@@ -268,7 +268,7 @@ figcaption {
 }
 
 /* o cardápio fica mais estreito para facilitar a leitura */
-.cardapio {max-width: 820px; }
+.cardapio { max-width: 820px; }
 
 .categoria { padding-top: 48px; }
 
@@ -524,8 +524,7 @@ input:focus, select:focus, textarea:focus {
     outline: 2px solid #d69a2d;
 }
 
-textarea { resize: vertical;}
-
+textarea { resize: vertical; }
 
 #retorno-form {
     margin-top: 16px;
